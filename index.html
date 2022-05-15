@@ -28,6 +28,7 @@
             <ul class="site-nav list">
               <li class="item">
                 <a class="link link-current" href="./index.html">Студия</a>
+                <div class="current"></div>
               </li>
               <li class="item">
                 <a class="link" href="./portfolio.html">Портфолио</a>
@@ -65,7 +66,7 @@
             ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />
             ДЛЯ ВАШЕГО БИЗНЕСА
           </h1>
-          <button class="button">Заказать услугу</button>
+          <button class="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- Наши преимущества -->
@@ -140,12 +141,15 @@
             <ul class="list">
               <li class="activity">
                 <img src="./images/img1.jpg" alt="гаджеты" width="370" />
+                <div class="activity-name">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</div>
               </li>
               <li class="activity">
                 <img src="./images/img2.jpg" alt="гаджеты" width="370" />
+                <div class="activity-name">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</div>
               </li>
               <li class="activity">
                 <img src="./images/img3.jpg" alt="гаджеты" width="370" />
+                <div class="activity-name">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</div>
               </li>
             </ul>
           </div>
@@ -387,25 +391,25 @@
            <h3 class="invite">ПРИСОЕДИНЯЙТЕСЬ</h3> 
            <ul class="footer-icons">
             <li class="list">
-              <a class="footer-icon" href=""><svg  width ="20" height="20">
+              <a class="footer-icon" href=""><svg  width="20" height="20">
                 <use href="./images/icons.svg#icon-instagram-2">
                 </use>
               </svg></a>
             </li>
             <li class="list">
-              <a class="footer-icon" href=""><svg  width ="20" height="20">
+              <a class="footer-icon" href=""><svg  width="20" height="20">
                 <use href="./images/icons.svg#icon-twitter-1">
                 </use>
               </svg></a>
             </li>
             <li class="list">
-              <a class="footer-icon" href=""><svg  width ="20" height="20">
+              <a class="footer-icon" href=""><svg  width="20" height="20">
                 <use href="./images/icons.svg#icon-facebook-1">
                 </use>
                 </svg></a>
             </li>
             <li class="list">
-              <a class="footer-icon" href=""><svg  width ="20" height="20">
+              <a class="footer-icon" href=""><svg  width="20" height="20">
                 <use href="./images/icons.svg#icon-linkedin-1">
                 </use>
                 </svg></a>
@@ -415,5 +419,11 @@
         </section>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" data-modal-close> <svg width="30" height="30"><use href="./images/icons.svg#icon-close1"></use></svg>  </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
